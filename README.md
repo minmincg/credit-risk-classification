@@ -38,12 +38,13 @@ Overall a good model, I would use this since we want to AVOID high risk loans.
 
 
 * Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+  * 100% of the times we predicted a healthy loan, it was TRUE, and we were able to find all healthy loans. The model got an f1-score of 100% Which is awesome.
+
+Though, only 87% of the times we predicted high-risk loans, they were True (we mistakingly let go of 13% of the loans, which still is pretty good because we were right about HIGH RISK loans 87% of the times. We were able to find 100% of the high risk loans and got an 93% on the f1-score.
+
+Overall a better model than the one with the original data, I would use this one instead since we want to AVOID high risk loans and this one is better at finding high risk loans.
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+Both models are very similar with the difference that in the second one we fitted with oversampled data. This model overall did a better job than the one with the original data. I would use Logistic Regression Model with Resampled Training Data to make predictions, since we want to AVOID high risk loans and this one is better at finding high risk loans. 
 
-If you do not recommend any of the models, please justify your reasoning.
